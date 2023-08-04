@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { client } from "../../lib/client";
 import { FooterBanner, HeroBanner, Navbar, Product } from "../../components";
-
+import { ProductsWrapper } from "../../components/Product.style";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ products, bannerData }) {
@@ -11,11 +11,11 @@ export default function Home({ products, bannerData }) {
     <>
       <HeroBanner heroBanner={bannerData[0]} />
 
-      <div>
+      <ProductsWrapper>
         {products.map((product) => (
           <Product key={product._id} product={product} />
         ))}
-      </div>
+      </ProductsWrapper>
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   );
