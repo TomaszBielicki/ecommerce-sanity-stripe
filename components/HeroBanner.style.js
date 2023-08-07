@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const ContentWrapper = styled.div`
+  margin-top: 150px;
+`;
+
 export const ImgWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -11,5 +15,5 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 1080px;
+  max-width: 100vw;
 `;
