@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { imageUrlFor } from "../lib/client";
+import { imageUrlFor } from "../../lib/client";
 import { ProductWrapper, Image, TextWrapper } from "./Product.style";
 
 const Product = ({ product: { image, name, slug, price } }) => {

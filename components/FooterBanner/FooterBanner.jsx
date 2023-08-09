@@ -1,10 +1,6 @@
 import React from "react";
-import Link from "next/link";
-
-import { imageUrlFor } from "../lib/client";
 
 const FooterBanner = ({ footerBanner }) => {
-  
   return (
     <div>
       <p>{footerBanner.discount}</p>
