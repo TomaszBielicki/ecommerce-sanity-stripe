@@ -2,7 +2,7 @@ import React from "react";
 import { client } from "../../lib/client";
 import { useRouter } from "next/router";
 
-import { Product } from "../../components";
+import { Product } from "components";
 import { ProductsWrapper } from "../../components/Product/Product.style";
 
 function Products({ products }) {
