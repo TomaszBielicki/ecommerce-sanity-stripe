@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const ProductWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   border: 1px solid black;
-  width: 80vw;
+  width: 150px;
   border-radius: 10px;
   padding: 10px;
 `;
@@ -15,8 +14,9 @@ export const ProductsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
+  height: 1000px;
 `;
 
 export const TextWrapper = styled.div`
