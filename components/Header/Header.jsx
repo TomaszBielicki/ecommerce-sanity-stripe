@@ -1,13 +1,15 @@
 import React from "react";
-
+import { MainHeader } from "./Header.style";
 function Header() {
   return (
-    <header>
+    <MainHeader>
       <div>
         <p>Nowości</p>
       </div>
       <div>
-        <p>Produkty</p>
+        <a href="/products">
+          <p>Produkty</p>
+        </a>
       </div>
       <div>
         <p>O nas</p>
@@ -15,7 +17,7 @@ function Header() {
       <div>
         <p>Regulamin</p>
       </div>
-    </header>
+    </MainHeader>
   );
 }
 
