@@ -5,13 +5,14 @@ import { AiOutlineShopping } from "react-icons/ai";
 import { Cart } from "..";
 import { useStateContext } from "../../context/StateContext";
 
+import { NavWrapper } from "./Navbar.style";
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   return (
-    <div className="navbar-container">
+    <NavWrapper>
       <p className="logo">
-        <Link href="/">Home</Link>
+        <Link href="/">Logo</Link>
       </p>
 
       <button
@@ -24,7 +25,7 @@ const Navbar = () => {
       </button>
 
       {showCart && <Cart />}
-    </div>
+    </NavWrapper>
   );
 };
 
