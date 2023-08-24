@@ -15,8 +15,9 @@ export const ProductsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
-  height: 1000px;
+  height: 30vh;
 `;
 
 export const TextWrapper = styled.div`

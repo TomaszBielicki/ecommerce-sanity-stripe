@@ -13,13 +13,15 @@ function Products({ products }) {
   };
 
   return (
-    <ProductsWrapper>
-      <button onClick={moveToHomeHandler}>Home</button>
+    <>
+      <ProductsWrapper>
+        {/* <button onClick={moveToHomeHandler}>Home</button> */}
 
-      {products.map((product) => (
-        <Product key={product._id} product={product} />
-      ))}
-    </ProductsWrapper>
+        {products.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </ProductsWrapper>
+    </>
   );
 }
 
