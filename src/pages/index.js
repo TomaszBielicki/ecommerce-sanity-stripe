@@ -1,6 +1,12 @@
 import { Inter } from "next/font/google";
 import { client } from "../../lib/client";
-import { FooterBanner, HeroBanner, Product, Header } from "../../components";
+import {
+  FooterBanner,
+  HeroBanner,
+  Product,
+  Header,
+  CategorySection,
+} from "../../components";
 import AboutUs from "../../components/AboutUs/AboutUs";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +16,7 @@ export default function Home({ products, bannerData }) {
       <Header />
       <HeroBanner heroBanner={bannerData[0]} />
 
-      <div className="maylike-products-wrapper">
+      <div>
         <h2>You may like</h2>
         <div className="marquee">
           <div className="maylike-products-container track">
@@ -20,8 +26,9 @@ export default function Home({ products, bannerData }) {
           </div>
         </div>
       </div>
+      <CategorySection />
       <AboutUs />
-      <FooterBanner footerBanner={bannerData && bannerData[0]} />
+      {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
     </>
   );
 }
